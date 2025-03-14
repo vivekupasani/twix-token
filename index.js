@@ -53,6 +53,10 @@ app.get("/generate-token", (req, res) => {
     });
 });
 
+app.get('/' , (req, res) => {
+    res.send('Hello, Agora Token API!')
+})
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`🚀 Agora Token API running at http://localhost:${PORT}`);
